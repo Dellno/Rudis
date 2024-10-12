@@ -72,7 +72,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'rudis.wsgi.application'
-
+AUTHENTICATION_BACKENDS = ['users.backends.EmailBackend']
+AUTH_USER_MODEL = 'main.CustomUser'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
